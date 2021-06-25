@@ -1,8 +1,10 @@
+<?php
+echo "hello";
+?>
+<script type="text/JavaScript"> 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-
 const recognition = new SpeechRecognition();
-
 var textbox =  $("#textbox");
 
 var instructions = $("#instructions");
@@ -14,6 +16,7 @@ recognition.continuous = true;
 recognition.onstart = function (){
     instructions.text("Recognition Started");
 }
+
 recognition.onspeechend = function(){
     instructions.text("No voices heard");
 }
@@ -29,12 +32,12 @@ recognition.onresult = function(event){
 
 $("#start-btn").click(function(event){
     if(content.length){
-        content += '';
+        content += " ";
     }
     recognition.start();
+   
 })
 $("#stop").click(function(event){
-    alert("works");
     recognition.stop();
-
 })
+</script>
