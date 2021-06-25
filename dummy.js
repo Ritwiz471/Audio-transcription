@@ -1,40 +1,39 @@
-<?php
-echo "hello";
-?>
-<script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"type="text/JavaScript"></script>
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
+var textbox =  $("#textbox");
+
+var instructions = $("#instructions");
  
 var content = '';
 
 recognition.continuous = true;
 
 recognition.onstart = function (){
-    document.getElementById('instructions').innerHTML="Recognition is on";
+    instructions.text("Recognition Started");
 }
 
 recognition.onspeechend = function(){
-    document.getElementById('instructions').innerHTML="NO voices heard";
+    instructions.text("No voices heard");
 }
 recognition.onerror = function(){
-    document.getElementById('instructions').innerHTML="There is a problem";
+    instructions.text("There is a problem");
 }
 recognition.onresult = function(event){
     var current = event.resultIndex;
     var transcript = event.results[current][0].transcript;
     content += transcript;
-    document.getElementById('textbox').innerHTML= content;
+    textbox.val(content);
 }
 
-document.getElementById('start-btn').onclick = function(event){
+$("#start-btn").click(function(event){
     if(content.length){
         content += " ";
     }
     recognition.start();
    
-};
-document.getElementById('stop').onclick = function(event){
+})
+$("#stop").click(function(event){
     recognition.stop();
-};
-</script>
+})

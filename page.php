@@ -1,3 +1,6 @@
+<?php
+include('transcript.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,5 +18,5 @@
             <p id="instructions"> Press the start button</p>
         </div>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </html>
