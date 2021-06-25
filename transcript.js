@@ -33,3 +33,8 @@ $("#start-btn").click(function(event){
     }
     recognition.start();
 })
+$("#stop").click(function(event){
+    alert("works");
+    recognition.stop();
+
+})
