@@ -36,7 +36,10 @@ if($pw != $pass){
 }
 else{
     if($role == "Teacher" || $role = "teacher"){
-        echo "<h3>hi</h3>";
+        session_start();
+        $_SESSION['batch'] = $batch;
+        $_SESSION['name'] = $row['Name'];
+        echo '<meta http-equiv= "refresh" content="1; url=/Audio-transcription/page.php"/>';
     }
     else if($role == "Student" || $role = "student"){
         echo "heloooo";
