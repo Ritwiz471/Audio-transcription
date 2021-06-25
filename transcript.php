@@ -16,7 +16,7 @@ error_reporting(E_ALL);
 $batch = $_SESSION['batch'];
 $name = $_SESSION['name'];
 $trans = $_POST['trans'];
-$filename = $name.
+$filename = date(DATE_RFC822);
 $myfile = fopen("Source/$filename", "w");
 fwrite($myfile,$trans);
 
