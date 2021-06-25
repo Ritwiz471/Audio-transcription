@@ -14,32 +14,35 @@ if(!$conn){
 
 $id = $_POST['cid'];
 $pw = $_POST['pass'];
-$role = $_POST['role'];
 $bat = $_POST['bat'];
 
-$sql1 = "SELECT * from users (WHERE ID = $id)";
+$sql1 = "SELECT * FROM users WHERE ID = $id";
 $run = mysqli_query($conn, $sql1);
 if(!$run){
-    echo mysqli_error($conn);
+    echo "error".mysqli_error($conn);
+}
+else{
+    echo "successsssss";
 }
 
 $row = mysqli_fetch_assoc($run);
-$pass = $row['pass'];
+$pass = $row['Password'];
 
+$role = $row['Role'];
+$batch = $row['Batch'];
 
 if($pw != $pass){
     echo "<h3>Incorrect Password</h3>";
 }
-else if($role == "Teacher" || $role = "teacher"){
-    echo "hi";
+else{
+    if($role == "Teacher" || $role = "teacher"){
+        session_start();
+        $_SESSION['batch'] = $batch;
+        $_SESSION['name'] = $row['Name'];
+        echo '<meta http-equiv= "refresh" content="1; url=/Audio-transcription/page.php"/>';
+    }
+    else if($role == "Student" || $role = "student"){
+        echo "heloooo";
+    }
 }
-else if($role == "Student" || $role = "student"){
-    echo "heloooo";
-}
-
-
-
-
-
-
 ?>
