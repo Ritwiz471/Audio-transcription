@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio transcription app</title>
+    </head>
+    <body>
+        <form action="insert.php" method="POST">
+            <div id = "container">
+            <h1>Sign up</h1>
+            <label for = "cid">Enter 10 digit unique user ID</label><br>
+            <input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" required><br><br>
+
+            <label for = "cn">Enter your name</label><br>
+            <input type = "text" id = "cn" name="cn" required><br><br>
+
+           <label for = "role">Choose your role</label><br>
+            <input type="radio" id="role" value="teacher" name="role">Teacher</input><br>
+            <input type="radio" id="role" value="student" name="role">Student</input><br><br>
+
+
+            <label for = "bat">Choose batch</label><br>
+            <input type = "radio" id = "bat" name="bat" value="P" required>P</input><br>
+            <input type = "radio" id = "bat" name="bat" value="Q" required>Q</input><br>
+            <input type = "radio" id = "bat" name="bat" value="R" required>R</input><br>
+
+
+            <br>
+
+            <label for = "pass">Set password</label><br>
+            <input type = "password" id = "pass" name="pass" required><br><br><br>
+
+
+            <button type = "submit" class="btn">Sign up</button>
+            </div>
+
+        </form>
+    </body>
+</html>
