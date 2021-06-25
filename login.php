@@ -14,7 +14,6 @@ if(!$conn){
 
 $id = $_POST['cid'];
 $pw = $_POST['pass'];
-$role = $_POST['role'];
 $bat = $_POST['bat'];
 
 $sql1 = "SELECT * FROM users WHERE ID = $id";
@@ -29,20 +28,18 @@ else{
 $row = mysqli_fetch_assoc($run);
 $pass = $row['Password'];
 
+$role = $row['Role'];
+$batch = $row['Batch'];
+
 if($pw != $pass){
     echo "<h3>Incorrect Password</h3>";
 }
-else if($role == "Teacher" || $role = "teacher"){
-    echo "<h3>hi</h3>";
+else{
+    if($role == "Teacher" || $role = "teacher"){
+        echo "<h3>hi</h3>";
+    }
+    else if($role == "Student" || $role = "student"){
+        echo "heloooo";
+    }
 }
-else if($role == "Student" || $role = "student"){
-    echo "heloooo";
-}
-
-
-
-
-
-
-
 ?>
