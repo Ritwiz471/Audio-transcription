@@ -17,10 +17,10 @@ $pw = $_POST['pass'];
 $role = $_POST['role'];
 $bat = $_POST['bat'];
 
-$sql1 = "SELECT from users WHERE ID = $id AND Password = $pw";
+$sql1 = "SELECT * from users (WHERE ID = $id)";
 $run = mysqli_query($conn, $sql1);
 if(!$run){
-    echo "Please enter Valid user ID and Password";
+    echo mysqli_error($conn);
 }
 
 $row = mysqli_fetch_assoc($run);
