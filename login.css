@@ -1,0 +1,12 @@
+table,th,td{
+    border:  black 1px;
+    margin-top: 15%;
+    margin-right: 20%;
+    margin-left: 40%;
+    border-radius: 7px;
+    border-collapse: collapse;
+    background-color: rgb(175, 131, 218);
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}

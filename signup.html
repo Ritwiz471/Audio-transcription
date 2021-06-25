@@ -13,17 +13,21 @@
             <label for = "cn">Enter your name</label><br>
             <input type = "text" id = "cn" name="cn" required><br><br>
 
-           <label for = "role">Choose your role</label><br>
-            <input type="radio" id="role" value="teacher" name="role">Teacher</input><br>
-            <input type="radio" id="role" value="student" name="role">Student</input><br><br>
+            <label for = "role">Choose your role</label><br>
+            <select name="role" id="role">
+                <option value="Teacher">Teacher</option>
+                <option value="Student">Student</option>
+            </select><br><br>
 
 
             <label for = "bat">Choose batch</label><br>
-            <input type = "radio" id = "bat" name="bat" value="P" required>P</input><br>
-            <input type = "radio" id = "bat" name="bat" value="Q" required>Q</input><br>
-            <input type = "radio" id = "bat" name="bat" value="R" required>R</input><br>
+            <select name="bat" id="bat">
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+            </select>
 
-
+            <br>
             <br>
 
             <label for = "pass">Set password</label><br>
