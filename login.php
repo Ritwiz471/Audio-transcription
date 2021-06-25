@@ -14,30 +14,32 @@ if(!$conn){
 
 $id = $_POST['cid'];
 $pw = $_POST['pass'];
-$role = $_POST['roll'];
-$bat = $_POST['id'];
+$role = $_POST['role'];
+$bat = $_POST['bat'];
 
-$sql1 = "SELECT from Users WHERE ID = $id AND Password = $pw";
+$sql1 = "SELECT * from users (WHERE ID = $id)";
 $run = mysqli_query($conn, $sql1);
 if(!$run){
-    echo "Please enter Valid user ID and Password";
+    echo mysqli_error($conn);
 }
 
 $row = mysqli_fetch_assoc($run);
 $pass = $row['pass'];
-$r = $row['roll'];
-$b = $row['bat'];
+
 
 if($pw != $pass){
     echo "<h3>Incorrect Password</h3>";
 }
-else{
-
+else if($role == "Teacher" || $role = "teacher"){
+    echo "hi";
+}
+else if($role == "Student" || $role = "student"){
+    echo "heloooo";
 }
 
 
 
-}
+
 
 
 ?>
