@@ -1,3 +1,47 @@
+<!DOCTYPE html>
 <html>
-    <h1>Login</h1>
+    <head>
+        <title>Log in</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        
+    </head>
+
+    <body>
+        <form method="POST" action="">
+        <div id="container">
+            <table>
+                <th colspan="2">Login</th>
+                <tr>
+                    <td><label for = "cid">User ID:</label></td>
+                    <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" required placeholder="Enter 10 digit ID"></td>
+                </tr>
+                <tr>
+                    <td><label for = "pass">Password:</label></td>
+                    <td><input type = "password" id = "pass" name="pass" required placeholder="enter the password"></td>
+                </tr>
+                <tr>
+                    <td><label for = "role">Your Role:</label></td>
+                    <td>
+                        <select name="role" id="role">
+                            <option value="Teacher">Teacher</option>
+                            <option value="Student">Student</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for = "bat">Batch:</label></td>
+                    <td><select name="bat" id="bat">
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                    </select></td>
+                </tr>
+                    <td><button type="submit" class="butn">Login</button></td>
+                </tr>
+             
+            </table>
+        </div>
+            
+        </form>
+    </body>
 </html>
