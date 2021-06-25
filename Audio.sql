@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 25, 2021 at 01:45 PM
+-- Generation Time: Jun 25, 2021 at 09:20 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -20,6 +20,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `Audio`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `P`
+--
+
+CREATE TABLE `P` (
+  `Sno` int(100) NOT NULL,
+  `Filename` text NOT NULL,
+  `TeacherName` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Q`
+--
+
+CREATE TABLE `Q` (
+  `Sno` int(100) NOT NULL,
+  `Filename` text NOT NULL,
+  `TeacherName` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `R`
+--
+
+CREATE TABLE `R` (
+  `Sno` int(100) NOT NULL,
+  `Filename` text NOT NULL,
+  `TeacherName` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -48,17 +84,59 @@ INSERT INTO `Users` (`ID`, `Name`, `Role`, `Batch`, `Password`) VALUES
 (1000000019, '', 'student', 'R', 'ecnejql'),
 (1000000024, 'rwjnv', 'teacher', 'R', 'ewjvnewjvn'),
 (2222222222, '', 'teacher', 'R', 'fn jv'),
-(3333333333, 'rjvnrhvjnrv', 'teacher', 'P', 'wrvjni');
+(3333333333, 'rjvnrhvjnrv', 'teacher', 'P', 'wrvjni'),
+(8888888888, 'suren', 'student', 'Q', 'euchbehc'),
+(9898989898, 'jewnvhj', 'Teacher', 'P', 'jcnejvn');
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `P`
+--
+ALTER TABLE `P`
+  ADD PRIMARY KEY (`Sno`);
+
+--
+-- Indexes for table `Q`
+--
+ALTER TABLE `Q`
+  ADD PRIMARY KEY (`Sno`);
+
+--
+-- Indexes for table `R`
+--
+ALTER TABLE `R`
+  ADD PRIMARY KEY (`Sno`);
+
+--
 -- Indexes for table `Users`
 --
 ALTER TABLE `Users`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `P`
+--
+ALTER TABLE `P`
+  MODIFY `Sno` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `Q`
+--
+ALTER TABLE `Q`
+  MODIFY `Sno` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `R`
+--
+ALTER TABLE `R`
+  MODIFY `Sno` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
