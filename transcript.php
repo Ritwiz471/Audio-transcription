@@ -33,8 +33,8 @@ document.getElementById('start-btn').onclick = function(event){
     }
     recognition.start();
    
-};
+}
 document.getElementById('stop').onclick = function(event){
     recognition.stop();
-};
+}
 </script>
