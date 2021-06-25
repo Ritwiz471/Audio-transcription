@@ -16,8 +16,9 @@ error_reporting(E_ALL);
 $batch = $_SESSION['batch'];
 $name = $_SESSION['name'];
 $trans = $_POST['trans'];
-$filename = date(DATE_RFC822);
-$myfile = fopen("Source/$filename", "w");
+$filename = "niru.txt";
+echo $filename;
+$myfile = fopen("/Audio-transcription/Source/$filename", "w");
 fwrite($myfile,$trans);
 
     $query = "INSERT INTO $batch (Filename, TeacherName) values('$filename','$name')";

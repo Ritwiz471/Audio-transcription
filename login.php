@@ -14,7 +14,7 @@ if(!$conn){
 
 $id = $_POST['cid'];
 $pw = $_POST['pass'];
-$bat = $_POST['bat'];
+//$bat = $_POST['bat'];
 
 $sql1 = "SELECT * FROM users WHERE ID = $id";
 $run = mysqli_query($conn, $sql1);
