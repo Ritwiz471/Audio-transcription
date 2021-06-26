@@ -70,3 +70,6 @@ border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
 }
+#textbox{
+  margin-left: 20px;
+}
