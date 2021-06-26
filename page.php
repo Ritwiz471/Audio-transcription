@@ -11,6 +11,7 @@ session_start();
     </head>
 
     <body>
+    
     <h1 id="title">Transcription</h1>
         <div class="words">
             <textarea id="textbox" rows="10" cols="50"></textarea> 
@@ -21,6 +22,7 @@ session_start();
         </div><br><br>
         <button onclick="location.href='login.html'" id='signout'>Sign Out</button>
     <p id="dummy"></p>
+    
     </body>
  
  
