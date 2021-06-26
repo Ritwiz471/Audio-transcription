@@ -18,7 +18,8 @@ $name = $_SESSION['name'];
 $trans = $_POST['trans'];
 $filename = "niru.txt";
 echo $filename;
-$myfile = fopen("/Audio-transcription/Source/$filename", "w");
+$path = "Source/".$filename;
+$myfile = fopen($path, "w");
 fwrite($myfile,$trans);
 
     $query = "INSERT INTO $batch (Filename, TeacherName) values('$filename','$name')";
