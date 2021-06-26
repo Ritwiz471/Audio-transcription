@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Log in</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="login.css">
         
     </head>
@@ -10,14 +11,14 @@
         <form method="POST" action="login.php">
         <div id="container">
             <table>
-                <th colspan="2">Login</th>
+                <th colspan="2"><b><h2>Login</h2></b></th>
                 <tr>
-                    <td><label for = "cid">User ID:</label></td>
-                    <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" required placeholder="Enter 10 digit ID"></td>
+                    <td><label for = "cid" class="ltitle"><b>USER ID</b></label></td>
+                    <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" required placeholder="Enter 10 digit ID" style="width: 160px; margin-left: -4%; height: 20px;"></td>
                 </tr>
                 <tr>
-                    <td><label for = "pass">Password:</label></td>
-                    <td><input type = "password" id = "pass" name="pass" required placeholder="enter the password"></td>
+                    <td><label for = "pass" class="ltitle"><b>PASSWORD</b></label></td>
+                    <td><input type = "password" id = "pass" name="pass" required placeholder="enter the password" style="width: 160px; margin-left: -4%; height: 20px;"></td>
                 </tr>
                 <!--<tr>
                     <td><label for = "role">Your Role:</label></td>
@@ -37,7 +38,7 @@
                     </select></td>
                 </tr>-->
                 <tr>
-                    <td><button type="submit" class="butn">Login</button></td>
+                    <td><button type="submit" class="butn" ><b>Login</b></button></td>
                 </tr>
              
             </table>
