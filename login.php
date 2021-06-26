@@ -27,7 +27,6 @@ $pass = $row['Password'];
 
 $role = $row['Role'];
 $batch = $row['Batch'];
-echo $role;
 
 if($pw != $pass){
     echo "<h3>Incorrect Password</h3>";

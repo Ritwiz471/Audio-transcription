@@ -1,7 +1,7 @@
 .container
 {    
     color: #26282a;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    box-shadow: 3px 3px 3px 0 rgb(0, 0, 0);
     width: 360px;
     right: 0px;
     margin-left: 33%;

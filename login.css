@@ -1,19 +1,29 @@
 table,th,td
 {    
     color: #26282a;
-    /*box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);*/
-    width: 360px;
+    /*box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    width: 360px;*/
     right: 0px;
-    margin-left: 55%;
-    height: 20px;
+   /* margin-left: 55%;
+    height: 20px;*/
     z-index: 1;
     padding: 2px 20px 20px 3%;
     border: 1px solid transparent;
-    border-top: 1px solid #f1f1f5;
+    
+    
+    /*margin-top: 10%;*/
+
+}
+#container
+{
+    margin-left: 35%;
     border-radius: 20px;
     background-color: #EBF5EE;
-    margin-top: 10%;
-
+    width: 410px;
+    height: 320px;   
+    margin-top: 15%;
+    box-shadow: 3px 3px 3px 0 rgb(0, 0, 0);
+   
 }
 
     

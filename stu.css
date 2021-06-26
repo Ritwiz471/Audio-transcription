@@ -1,26 +1,10 @@
-#container
-{    
-    color: #26282a;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
-    width: 360px;
-    right: 0px;
-    margin-left: 33%;
-    height: 400px;
-    z-index: 1;
-    padding: 28px 5px 28px 7%;
-    margin-bottom: 5%;
-    border: 1px solid transparent;
-    border-top: 1px solid #f1f1f5;
-    border-radius: 20px;
-    background-color: #EBF5EE;
-    margin-top: 7%;
-}
 
 h1
 {
-    margin-left: -20%;
     font-family: raleway;
     text-align: center;
+    color: white;
+    margin-top: 5%;
 }
 
 body
@@ -41,28 +25,52 @@ body
     margin-left: -5%;
     width: 220px;    
 }
-table{
-    border:2px solid #1179e7;
+table, th, td, tr {
+    border: none;
+    line-height: 25px;
+    align-items: center;
+    padding: 5px;
+    
+padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     padding-right: 15px;
-    padding-left: 20px;
-}
-tr,th,td
-{
 
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+}
+table {
+    margin-left:20% ;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0 rgb(0, 0, 0);
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: black;
 }
 
 #sub
 {
-  margin-top: 40%;
   margin-left: 22%;
   padding: 0.6rem 1.8rem;
   background-color: #1179e7;
   border: none;
   border-radius: 25px;
   color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+#signout
+{
+  margin-left: 45%;
+  margin-top: 1%;
+  padding: 0.6rem 1.8rem;
+  background-color:tomato;
+  border: none;
+  border-radius: 25px;
+  color:white;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;

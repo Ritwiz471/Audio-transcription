@@ -3,7 +3,6 @@ session_start();
 echo "<html>";
 echo "<body>";
 $conn = mysqli_connect("localhost","root","","Audio");
-
 if(!$conn)
 {
     echo "failed";
@@ -12,7 +11,7 @@ if(!$conn)
 //error reporting 
 ini_set ("display_errors", "1");
 error_reporting(E_ALL);
-
+echo '<h1>HERE ARE YOUR FILES TO DOWNLOAD</h1>';
 $name = $_SESSION['name'];
 $batch = $_SESSION['batch'];
 
@@ -33,7 +32,7 @@ echo "<div id='container'>";
             echo "<td>{$row['Filename']}</td>";
             echo "<td>{$row['TeacherName']}</td>";
             $filename = "/Audio-transcription/Source/".$row['Filename'];  
-            echo '<td><a href= "'.$filename.'" target="_blank"><button>Download</button></a></td>';
+            echo '<td><a href= "'.$filename.'" target="_blank"><button id="sub">Download</button></a></td>';
         echo "</tr>";
         echo "</div>";
     } 
@@ -51,7 +50,7 @@ echo "<div id='container'>";
     <div>
 
     <br>
-    <button id="sub" onclick="location.href='login.html'">Sign Out</button>
+    <button id="signout" onclick="location.href='login.html'">Sign Out</button>
 </div>
 </body>
 </html>

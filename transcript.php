@@ -17,7 +17,6 @@ $batch = $_SESSION['batch'];
 $name = $_SESSION['name'];
 $trans = " ".$_POST['trans'];
 $filename = "file".date("Y-m-d").".txt";
-echo $filename;
 $path = "Source/".$filename;
 
 $myfile = fopen($path, "a");
@@ -30,10 +29,6 @@ fwrite($myfile,$trans);
     {
         echo mysqli_error();
 
-    }
-    else
-    {
-        echo "sucess";
     }
 
 fclose($myfile);
