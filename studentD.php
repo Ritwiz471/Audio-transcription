@@ -38,6 +38,8 @@ if(!$run)
     echo "</table>";
     echo "</body>";
     echo "</html>";
-
-
 ?>
+<html>
+    <br>
+    <button onclick="location.href='login.html'">Sign Out</button>
+</html>

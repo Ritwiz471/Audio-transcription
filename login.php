@@ -21,9 +21,6 @@ $run = mysqli_query($conn, $sql1);
 if(!$run){
     echo "error".mysqli_error($conn);
 }
-else{
-    echo "successsssss";
-}
 
 $row = mysqli_fetch_assoc($run);
 $pass = $row['Password'];

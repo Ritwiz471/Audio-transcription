@@ -23,7 +23,7 @@ session_start();
  
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script>
+<script>
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
@@ -71,4 +71,5 @@ document.getElementById('stop').onclick = function(event){
 });
 };
 </script>
+<button onclick="location.href='login.html'">Sign Out</button>
 </html>
