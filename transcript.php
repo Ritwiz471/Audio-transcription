@@ -18,7 +18,7 @@ $name = $_SESSION['name'];
 $trans = $_POST['trans'];
 $filename = "niru.txt";
 echo $filename;
-$path = "Source/".$filename;
+$path = "/Audio-transcription/Source/".$filename;
 $myfile = fopen($path, "w");
 fwrite($myfile,$trans);
 
