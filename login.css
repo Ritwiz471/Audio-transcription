@@ -1,29 +1,52 @@
-/*table,th,td{
-    border:  black 1px;
-    margin-top: 15%;
-    margin-right: 20%;
-    margin-left: 40%;
-    border-radius: 7px;
-    border-collapse: collapse;
-    background-color: rgb(175, 131, 218);
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}*/
-.container
+table,th,td
 {    
     color: #26282a;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    /*box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);*/
     width: 360px;
     right: 0px;
     margin-left: 55%;
-    height: 400px;
+    height: 20px;
     z-index: 1;
-    padding: 28px 5px 28px 7%;
-    margin-bottom: 5%;
+    padding: 2px 20px 20px 3%;
     border: 1px solid transparent;
     border-top: 1px solid #f1f1f5;
     border-radius: 20px;
     background-color: #EBF5EE;
-    margin-top: 7%;
+    margin-top: 10%;
 }
+    
+.ltitle, th,button{
+    font-family: raleway;
+    
+}
+th{
+    margin-right: 20px;
+}
+body{
+    background-image: linear-gradient(135deg,#0c5073,#1080b6,#169ad7,#22bdd9,#72c7ef) ;
+    height: 600px;
+}
+button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*margin-left: 30%;*/
+  margin-right: 80%;
+  padding: 0.6rem 1.8rem;
+  background-color: #1179e7;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover{
+    background: #205894;
+}
+input[type=number],input[type=password]{
+    border: 2px SOLID #0f79ad;
+    border-radius: 2px;
+    padding:6px 7px;
+    text-align: center;
+}
+
