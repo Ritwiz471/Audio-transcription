@@ -23,8 +23,9 @@ if(!$run)
     echo mysqli_error($conn);
 
 }
-    
-    echo "<table class = 'dash' border='2px'>";
+echo "<div id='container'>";
+
+    echo "<table>";
     while($row = mysqli_fetch_assoc($run)) 
     {
         echo "<tr>";
@@ -34,12 +35,23 @@ if(!$run)
             $filename = "/Audio-transcription/Source/".$row['Filename'];  
             echo '<td><a href= "'.$filename.'" target="_blank"><button>Download</button></a></td>';
         echo "</tr>";
+        echo "</div>";
     } 
     echo "</table>";
     echo "</body>";
     echo "</html>";
 ?>
 <html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <link rel="stylesheet" href="stu.css"/>
+</head>
+<body>
+    <div>
+
     <br>
-    <button onclick="location.href='login.html'">Sign Out</button>
+    <button id="sub" onclick="location.href='login.html'">Sign Out</button>
+</div>
+</body>
 </html>

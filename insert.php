@@ -1,3 +1,4 @@
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -21,7 +22,7 @@ $sql = "INSERT INTO Users(ID,Name,Role,Batch,Password)
 VALUES ('$id','$na','$rol','$batch','$pw')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Account created successfully";
+  echo "<html><h1>Account successfully created &#127881;</h1></html>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -30,6 +31,13 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 ?>
 <html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+  <link rel="stylesheet" href="ins.css"/>
+  </head>
+  <body>
     <br>
-    <button onclick="location.href='login.html'">Go to login page</button>
+    <button id =sub onclick="location.href='login.html'">Go to login page</button>
+</body>
 </html>
