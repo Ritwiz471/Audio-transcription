@@ -15,11 +15,14 @@ error_reporting(E_ALL);
 
 $batch = $_SESSION['batch'];
 $name = $_SESSION['name'];
-$trans = $_POST['trans'];
-$filename = date(DATE_RFC822);
-$myfile = fopen("Source/$filename", "w");
-fwrite($myfile,$trans);
+$trans = " ".$_POST['trans'];
+$filename = "file".date("Y-m-d").".txt";
+echo $filename;
+$path = "Source/".$filename;
 
+$myfile = fopen($path, "a");
+fwrite($myfile,$trans);
+    
     $query = "INSERT INTO $batch (Filename, TeacherName) values('$filename','$name')";
     $run = mysqli_query($conn,$query);
      //check query
