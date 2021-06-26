@@ -6,35 +6,38 @@
     </head>
     <body>
         <form action="insert.php" method="POST">
+            
             <div class="container">
             <h1>SIGN UP</h1>
-            <label for = "cid" class="ltitle"><b>USER ID</b></label>
-            <input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" placeholder="10 DIGIT USER ID" required class="lvalue"><br><br>
-
-            <label for = "cn">Enter your name</label><br>
-            <input type = "text" id = "cn" name="cn" required><br><br>
-
-            <label for = "role">Choose your role</label><br>
-            <select name="role" id="role">
+            <table>
+            <tr>
+            <td><label for = "cid" class="ltitle"><b>USER ID</b></label></td>
+            <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" placeholder="10 DIGIT USER ID" required class="lvalue"></td>
+            </tr>
+            <tr>
+            <td><label for = "cn">Enter your name</label></td>
+            <td><input type = "text" id = "cn" name="cn" required></td>
+            </tr>
+            <tr>
+            <td><label for = "role">Choose your role</label></td>
+            <td><select name="role" id="role">
                 <option value="Teacher">Teacher</option>
                 <option value="Student">Student</option>
-            </select><br><br>
-
-
-            <label for = "bat">Choose batch</label><br>
-            <select name="bat" id="bat">
+            </select></td>
+            </tr>
+            <tr>
+            <td><label for = "bat">Choose batch</label></td>
+            <td><select name="bat" id="bat">
                 <option value="P">P</option>
                 <option value="Q">Q</option>
                 <option value="R">R</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label for = "pass">Set password</label><br>
-            <input type = "password" id = "pass" name="pass" required><br><br><br>
-
-
+            </select></td>
+            </tr> 
+            <tr>
+            <td><label for = "pass">Set password</label></td>
+            <td><input type = "password" id = "pass" name="pass" required></td>
+            </tr>
+            </table>
             <button type = "submit" class="btn">Sign up</button>
         </div>
 
