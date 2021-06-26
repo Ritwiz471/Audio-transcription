@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>Audio transcription app</title>
+        <link rel="stylesheet" href="sign_style.css"/>
     </head>
     <body>
         <form action="insert.php" method="POST">
-            <div id = "container">
-            <h1>Sign up</h1>
-            <label for = "cid">Enter 10 digit unique user ID</label><br>
-            <input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" required><br><br>
+            <div class="container">
+            <h1>SIGN UP</h1>
+            <label for = "cid" class="ltitle"><b>USER ID</b></label>
+            <input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" placeholder="10 DIGIT USER ID" required class="lvalue"><br><br>
 
             <label for = "cn">Enter your name</label><br>
             <input type = "text" id = "cn" name="cn" required><br><br>
@@ -35,7 +36,7 @@
 
 
             <button type = "submit" class="btn">Sign up</button>
-            </div>
+        </div>
 
         </form>
     </body>
