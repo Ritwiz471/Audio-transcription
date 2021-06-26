@@ -9,36 +9,37 @@
             
             <div class="container">
             <h1>SIGN UP</h1>
-            <table>
+            <table >
             <tr>
             <td><label for = "cid" class="ltitle"><b>USER ID</b></label></td>
-            <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" placeholder="10 DIGIT USER ID" required class="lvalue"></td>
+            <td><input type = "number" id = "cid" name="cid" min="1000000000" max="9999999999" placeholder="      10 DIGIT USER ID" required class="lvalue" style="width: 180px;"></td>
+            </tr>
+            <tr>       
+            <td><label for = "cn"class="ltitle"><b>NAME</b></label></td>
+            <td><input type = "text" id = "cn" name="cn" required style="width: 180px; margin-left: -5%;"></td>
             </tr>
             <tr>
-            <td><label for = "cn">Enter your name</label></td>
-            <td><input type = "text" id = "cn" name="cn" required></td>
-            </tr>
-            <tr>
-            <td><label for = "role">Choose your role</label></td>
-            <td><select name="role" id="role">
-                <option value="Teacher">Teacher</option>
-                <option value="Student">Student</option>
+            <td><label for = "role" class="ltitle"><b>ROLE</b></label></td>
+            <td><select name="role" id="role" style="width: 200px; margin-left: -5%;">
+                <option selection disabled style="text-align: center;">-----select an option-----</option>
+                <option  value="Teacher">TEACHER</option>
+                <option value="Student">STUDENT</option>
             </select></td>
             </tr>
             <tr>
-            <td><label for = "bat">Choose batch</label></td>
-            <td><select name="bat" id="bat">
+            <td><label for = "bat"class="ltitle" ><b>BATCH</b></label></td>
+            <td><select name="bat" id="bat"style="margin-left: -5%;">
                 <option value="P">P</option>
                 <option value="Q">Q</option>
                 <option value="R">R</option>
             </select></td>
             </tr> 
             <tr>
-            <td><label for = "pass">Set password</label></td>
-            <td><input type = "password" id = "pass" name="pass" required></td>
+            <td><label for = "pass" class="ltitle"><b>PASSWORD</b></label></td>
+            <td><input type = "password" id = "pass" name="pass" required style="width:180px;margin-left:-5%"></td>
             </tr>
             </table>
-            <button type = "submit" class="btn">Sign up</button>
+            <button type = "submit" class="btn" id="sub">Sign up</button>
         </div>
 
         </form>

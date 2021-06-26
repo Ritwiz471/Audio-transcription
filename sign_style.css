@@ -4,7 +4,7 @@
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
     width: 360px;
     right: 0px;
-    margin-left: 60%;
+    margin-left: 55%;
     height: 400px;
     z-index: 1;
     padding: 28px 5px 28px 7%;
@@ -13,13 +13,12 @@
     border-top: 1px solid #f1f1f5;
     border-radius: 20px;
     background-color: #EBF5EE;
-    
- 
+    margin-top: 7%;
 }
 
 h1
 {
-    margin-left: -10%;
+    margin-left: -20%;
     font-family: raleway;
     text-align: center;
 }
@@ -33,12 +32,43 @@ body
 {
     font-family: raleway;
     font-size: 20px;
-    margin-left: -10%;
+    margin-left: -65%;
     
 }
 
 .lvalue
 {
-    margin-left: 20%;
+    margin-left: -5%;
     width: 220px;    
+}
+tr,th,td
+{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+input[type=text],input[type=number],select ,input[type=password]{
+    border: 2px SOLID #0f79ad;
+    border-radius: 4px;
+    padding:6px 7.5px;
+    text-align: center;
+  }
+#sub
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20%;
+  padding: 0.6rem 1.8rem;
+  background-color: #1179e7;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#sub:hover
+{
+    background-color: #0b5aae;
 }
