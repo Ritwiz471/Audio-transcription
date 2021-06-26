@@ -1,4 +1,4 @@
-table,th,td{
+/*table,th,td{
     border:  black 1px;
     margin-top: 15%;
     margin-right: 20%;
@@ -9,4 +9,21 @@ table,th,td{
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
+}*/
+.container
+{    
+    color: #26282a;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    width: 360px;
+    right: 0px;
+    margin-left: 55%;
+    height: 400px;
+    z-index: 1;
+    padding: 28px 5px 28px 7%;
+    margin-bottom: 5%;
+    border: 1px solid transparent;
+    border-top: 1px solid #f1f1f5;
+    border-radius: 20px;
+    background-color: #EBF5EE;
+    margin-top: 7%;
 }
