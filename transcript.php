@@ -15,13 +15,14 @@ error_reporting(E_ALL);
 
 $batch = $_SESSION['batch'];
 $name = $_SESSION['name'];
-$trans = $_POST['trans'];
-$filename = "niru.txt";
+$trans = " ".$_POST['trans'];
+$filename = "file".date("Y-m-d").".txt";
 echo $filename;
-$path = "/Audio-transcription/Source/".$filename;
-$myfile = fopen($path, "w");
-fwrite($myfile,$trans);
+$path = "Source/".$filename;
 
+$myfile = fopen($path, "a");
+fwrite($myfile,$trans);
+    
     $query = "INSERT INTO $batch (Filename, TeacherName) values('$filename','$name')";
     $run = mysqli_query($conn,$query);
      //check query
