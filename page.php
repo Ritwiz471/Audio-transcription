@@ -6,17 +6,20 @@ session_start();
     <head>
         <title>Speech Recognition</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="stylesheet" href="dash.css"/>
     </head>
 
     <body>
+    <h1 id="title">Transcription</h1>
         <div class="words">
-            <h1>Transcription APP</h1>
-            <p id="textbox"></p><br>
-            <button id="start-btn">Start</button>
-            <button id="stop">Stop</button>
+            <textarea id="textbox" rows="10" cols="50"></textarea> 
+            <br><br> 
+            <button id="start-btn" class="btn">Start</button>
+            <button id="stop" class="btn">Stop</button>
             <p id="instructions"> Press the start button</p>
-        </div>
+        </div><br><br>
+        <button onclick="location.href='login.html'" id='signout'>Sign Out</button>
     <p id="dummy"></p>
     </body>
  
@@ -71,5 +74,5 @@ document.getElementById('stop').onclick = function(event){
 });
 };
 </script>
-<button onclick="location.href='login.html'">Sign Out</button>
+
 </html>
