@@ -30,19 +30,23 @@ $pass = $row['Password'];
 
 $role = $row['Role'];
 $batch = $row['Batch'];
+echo $role;
 
 if($pw != $pass){
     echo "<h3>Incorrect Password</h3>";
 }
 else{
-    if($role == "Teacher" || $role = "teacher"){
+    if($role == "Teacher" || $role =="teacher"){
         session_start();
         $_SESSION['batch'] = $batch;
         $_SESSION['name'] = $row['Name'];
         echo '<meta http-equiv= "refresh" content="1; url=/Audio-transcription/page.php"/>';
     }
-    else if($role == "Student" || $role = "student"){
-        echo "heloooo";
+    else if($role == "Student" || $role == "student"){
+        session_start();
+        $_SESSION['batch'] = $batch;
+        $_SESSION['name'] = $row['Name'];
+        echo '<meta http-equiv= "refresh" content="1; url=/Audio-transcription/studentD.php"/>';
     }
 }
 ?>
