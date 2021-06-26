@@ -21,7 +21,7 @@ table,th,td
     background-color: #EBF5EE;
     width: 410px;
     height: 320px;   
-    margin-top: 15%;
+    margin-top: 10%;
     box-shadow: 3px 3px 3px 0 rgb(0, 0, 0);
    
 }
@@ -61,4 +61,6 @@ input[type=number],input[type=password]{
     padding:6px 7px;
     text-align: center;
 }
-
+h2{
+    margin-left: 20%;
+}
